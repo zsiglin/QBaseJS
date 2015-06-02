@@ -1,0 +1,24 @@
+{
+  "name": "QBase",
+  "version": "1.0.0",
+  "description": "Fast, concise implementation of select Quickbase API functions",
+  "main": "qbase.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zsiglin/BaseJS.git"
+  },
+  "keywords": [
+    "quickbase",
+    "qb"
+  ],
+  "author": "Advantage Integrated Solutions",
+  "license": "ISC",
+  "dependencies": { 
+    "xmlhttprequest" : "1.0.0 - 2.9999.9999",
+    "pixl-xml" : ">=1.0.2 <2.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/zsiglin/BaseJS/issues"
+  },
+  "homepage": "https://github.com/zsiglin/BaseJS"
+}
