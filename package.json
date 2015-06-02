@@ -5,7 +5,7 @@
   "main": "qbase.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zsiglin/BaseJS.git"
+    "url": "git@github.com:zsiglin/QBaseJS.git"
   },
   "keywords": [
     "quickbase",
@@ -14,11 +14,11 @@
   "author": "Advantage Integrated Solutions",
   "license": "ISC",
   "dependencies": { 
-    "xmlhttprequest" : "1.0.0 - 2.9999.9999",
-    "pixl-xml" : ">=1.0.2 <2.1.2"
+    "xmlhttprequest" : "1.7.0",
+    "pixl-xml" : "1.0.2"
   },
   "bugs": {
-    "url": "https://github.com/zsiglin/BaseJS/issues"
+    "url": "https://github.com/zsiglin/QBaseJS/issues"
   },
-  "homepage": "https://github.com/zsiglin/BaseJS"
+  "homepage": "https://github.com/zsiglin/QBaseJS"
 }
