@@ -10,7 +10,9 @@ var config = {
     teachers: {
       dbid: "",
       rid: 3,
-      recordOwner: 5
+      recordOwner: 5,
+      firstName: 6,
+      lastName: 7
     }
   }
 };
@@ -126,7 +128,7 @@ var db = new Base(config, function(){
     console.log("DO QUERY COUNT: " + response);
   });
   
-  var response = db.teachers.deleteRecord("3924", function(response){
+  db.teachers.deleteRecord("3924", function(response){
     console.log("DELETE: " + response);
   });
   
@@ -142,11 +144,11 @@ var db = new Base(config, function(){
   });
   
   var query = { rid: { XEX: "" } };
-  var response = db.teachers.purgeRecords(query, function(response){
+  db.teachers.purgeRecords(query, function(response){
     console.log("PURGE: " + response);
   });
   
-  var response = db.teachers.getTableFields(function(response){
+  db.teachers.getTableFields(function(response){
     console.log("TABLE FIELDS: " + response);
   });
 });
