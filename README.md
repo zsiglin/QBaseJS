@@ -6,7 +6,9 @@ npm install qbase
 ```
 
 ###Usage
-Populate the config object in the format seen below and pass it into the Base constructor. The "tables" object should be filled with any tables in your application you would like to interact with. See further examples in "example.js".
+Populate the config object in the format seen below and pass it into the Base constructor. The "tables" object should be filled with any tables in your application you would like to interact with. 
+
+See further examples in "example.js".
 
 ```javascript
 var Base = require("qbase");
