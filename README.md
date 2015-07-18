@@ -27,7 +27,7 @@ var config = {
 };
 
 var db = new Base(config, function(){
-  // Subsequent calls must be made within this callback
+  // subsequent calls must be made within this callback
   db.customers.all({ clist: ["rid"] }, function(response){
     // response == query results
   });
