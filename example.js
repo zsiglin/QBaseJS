@@ -2,17 +2,14 @@ var Base = require("qbase");
 
 var config = {
   token: "",
-  realm: "",
-  username: "",
-  password: "",
-  databaseId: "",
+  realm: "xyzcorp",
+  username: "john@xyzcorp.com",
+  password: "password",
+  databaseId: "bj3xvxtzw",
   tables: {
     teachers: {
-      dbid: "",
-      rid: 3,
-      recordOwner: 5,
-      firstName: 6,
-      lastName: 7
+      dbid: "bj3xvxt6t",
+      rid: 3
     }
   }
 };
