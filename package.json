@@ -13,9 +13,10 @@
   ],
   "author": "Advantage Integrated Solutions",
   "license": "ISC",
-  "dependencies": { 
-    "xmlhttprequest" : "1.7.0",
-    "pixl-xml" : "1.0.2"
+  "dependencies": {
+    "pixl-xml": "1.0.2",
+    "q": "^1.4.1",
+    "xmlhttprequest": "1.7.0"
   },
   "bugs": {
     "url": "https://github.com/zsiglin/QBaseJS/issues"
