@@ -1,6 +1,6 @@
 {
   "name": "QBase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast, concise implementation of select Quickbase API functions",
   "main": "qbase.js",
   "repository": {
