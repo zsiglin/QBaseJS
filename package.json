@@ -1,5 +1,5 @@
 {
-  "name": "QBase",
+  "name": "qbase",
   "version": "1.0.1",
   "description": "Fast, concise implementation of select Quickbase API functions",
   "main": "qbase.js",
