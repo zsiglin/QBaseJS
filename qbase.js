@@ -164,12 +164,12 @@ function BaseConnect(config, baseInstance){
 
   this.handleXMLCharacters = function(string){
     if (typeof string == "string") {
-    string = string
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&apos;')
+      string = string
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;')
     };
 
     return string;
