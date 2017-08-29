@@ -169,8 +169,8 @@ function BaseConnect(config, baseInstance){
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;')
-    };
+        .replace(/'/g, '&apos;');
+    }
 
     return string;
   };
