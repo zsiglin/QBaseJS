@@ -163,12 +163,16 @@ function BaseConnect(config, baseInstance){
   };
 
   this.handleXMLCharacters = function(string){
-    return string
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&apos;')
+    if (typeof string == "string") {
+      string = string
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+    }
+
+    return string;
   };
 
   this.buildPostData = function(dbid, data){
@@ -435,7 +439,11 @@ function BaseConnect(config, baseInstance){
     if(value){
       if(value.filename){
         param += " filename='" + value.filename + "'>";
-        param += this.base64Encode(value.body);
+        if (value.ignoreEncoding == true) {
+          param += value.body;
+        } else {
+          param += this.base64Encode(value.body);
+        };
       }else{
         param += ">"
         param += value;
