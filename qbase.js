@@ -438,7 +438,7 @@ function BaseConnect(config, baseInstance){
         if (value.ignoreEncoding == true) {
           param += value.body;
         } else {
-        param += this.base64Encode(value.body);
+          param += this.base64Encode(value.body);
         };
       }else{
         param += ">"
