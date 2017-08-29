@@ -163,12 +163,16 @@ function BaseConnect(config, baseInstance){
   };
 
   this.handleXMLCharacters = function(string){
-    return string
+    if (typeof string == "string") {
+    string = string
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&apos;')
+    };
+
+    return string;
   };
 
   this.buildPostData = function(dbid, data){
