@@ -700,7 +700,8 @@ module.exports = function Base(config, callback){
 
     this.addRecord = function(fieldParams, callback){
       var handle = function(response){
-        return parseInt(BaseConnectInstance.getNode(response, "rid"));
+        var newRid = parseInt(BaseConnectInstance.getNode(response, "rid"));
+        return isNaN(newRid) ? response : newRid;
       };
 
       var data = {
