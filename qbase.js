@@ -716,7 +716,7 @@ module.exports = function Base(config, callback){
     this.editRecord = function(rid, fieldParams, callback){
       var handle = function(response){
         var rid = BaseConnectInstance.getNode(response, "rid");
-        return rid ? true : false;
+        return rid ? true : response;
       };
 
       var data = {
